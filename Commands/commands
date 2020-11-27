@@ -10,7 +10,7 @@ bin/kafka-topics.sh --describe --bootstrap-server localhost:9092
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic LOJA_NOVO_PEDIDO
 
 #Consome as Mensagens
-bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic LOJA_NOVO_PEDIDO --from-beginning
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
 
 #Monitora mensagem nos grupos consumidores
 
