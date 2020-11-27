@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e6fa07-315f-4de2-8d29-9e7687a6aa9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/br.com.grupomateus/.idea/br.com.grupomateus.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/br.com.grupomateus/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/br.com.grupomateus/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/br.com.grupomateus/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/br.com.ecommerce/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/br.com.ecommerce/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/br.com.ecommerce/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commands/commands" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/commands" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/server.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/controller.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/controller.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/kafkaServer-gc.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/kafkaServer-gc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log-cleaner.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log-cleaner.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/server.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/state-change.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/state-change.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/zookeeper-gc.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/zookeeper-gc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/zookeeper-gc.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs/zookeeper-gc.log.1" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +34,13 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/br.com.grupomateus/service-users/src/main/java/br/com" />
+      <recent name="$PROJECT_DIR$/apps/br.com.grupomateus/service-new-order/src/main/java/br/com" />
+      <recent name="$PROJECT_DIR$/apps/br.com.grupomateus/service-log/src/main/java/br/com" />
+      <recent name="$PROJECT_DIR$/apps/br.com.grupomateus/service-http-ecommerce/src/main/java/br/com" />
+      <recent name="$PROJECT_DIR$/apps/br.com.grupomateus/service-fraud-detector/src/main/java/br/com" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/consumer" />
     </key>
@@ -67,7 +69,7 @@
       <updated>1606167549914</updated>
       <workItem from="1606167551116" duration="3733000" />
       <workItem from="1606233863255" duration="17932000" />
-      <workItem from="1606475936633" duration="243000" />
+      <workItem from="1606475936633" duration="5755000" />
     </task>
     <servers />
   </component>

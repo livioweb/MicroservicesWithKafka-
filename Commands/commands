@@ -18,3 +18,50 @@ bin/kafka-consumer-groups.sh --all-groups --bootstrap-server localhost:9092 --li
 
 #Altera a quantidade de particoes  dos topicos ( paralelismo ) O numero maximo de particoes deve ser o mesmo de consumer
 bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic ECOMMERCE_NEW_ORDER --partitions 3
+
+bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic ECOMMERCE_NEW_ORDER --replications-factor 2
+
+
+ 18 ############################# Server Basics #############################
+ 19
+ 20 # The id of the broker. This must be set to a unique integer for each broker.
+>> 21 broker.id=0 ,,-- Ideintificar do no do cluster
+ 22 #totalde clusters ativos
+>> 23 default.replication.factor=1
+
+
+ 24 #############################Socket Server Settings #############################
+ 25
+ 26 # The address the socket server listens on. It will get the value returned from
+ 27 # java.net.InetAddress.getCanonicalHostName() if not configured.
+ 28 #   FORMAT:
+ 29 #     listeners = listener_name://host_name:port
+ 30 #   EXAMPLE:
+ 31 #     listeners = PLAINTEXT://your.host.name:9092
+ >> 32 #listeners=PLAINTEXT://:9092 <<-- muda a porta aqui para cada cluster
+ 33
+  72 ############################# Internal Topic Settings  #############################
+  73 # The replication factor for the group metadata internal topics "__consumer_offsets" and "__transaction_state"
+  74 # For anything other than development testing, a value greater than 1 is recommended to ensure availability such as 3.
+ >> 75 offsets.topic.replication.factor=1 <<-- change to 3
+ >> 76 transaction.state.log.replication.factor=1 <<-- change to 3
+  77 transaction.state.log.min.isr=1
+
+ 58 ############################# Log Basics #############################
+ 59
+ 60 # A comma separated list of directories under which to store log files
+>> 61 log.dirs=/tmp/kafka-logs <<-- change this directorie to persistence files
+ 62
+ 63 # The default number of log partitions per topic. More partitions allow greater
+ 64 # parallelism for consumption, but this will also result in more files across
+ 65 # the brokers.
+ 66 num.partitions=1
+ 67
+ 68 # The number of threads per data directory to be used for log recovery at startup and flushing at shutdown.
+ 69 # This value is recommended to be increased for installations with data dirs located in RAID array.
+ 70 num.recovery.threads.per.data.dir=1
+
+
+No arquivo DISPATCHER
+        properties.setProperty(ProducerConfig.ACKS_CONFIG,"all");
+Eel vai esperar o lider receber e replicar em todos os nós do brokker
